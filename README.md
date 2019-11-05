@@ -1,15 +1,12 @@
 # Set fixed versions for your dependencies
 
-## Make file executable
+## Setup
+*Not tested*
 ```
-chmod +x cli.js   
-```
-## Link
-```
-$ npm link
+$ npm start
 ```
 
-## Unlink
+## Cleanup
 ```
 $ npm unlink  
 ```

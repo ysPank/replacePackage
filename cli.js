@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const PATTERN = /^[@\^~]{1}/;
+const SORRY_MESSAGE = "We had a trouble writing your package😢 However, you can insert it on your own.\r\n"
 
 const replaceWithFixed = () => {
   fs.readFile("./package.json", (err, data) => {
@@ -23,7 +24,7 @@ const replaceWithFixed = () => {
     }
 
     fs.writeFile("package.json", JSON.stringify(pack, undefined, 2), err =>
-      console.log(err ? err : "File have been repalced")
+      console.log(err ? SORRY_MESSAGE + pack: "File have been repalced")
     );
   });
 };
