@@ -1,0 +1,17 @@
+{
+  "name": "package_fixed",
+  "version": "1.0.0",
+  "description": "Replace package.json  with fixed versions",
+  "main": "replace-with-fixed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Yuriy Panko",
+    "email": "yuriy.panko@gmail.com"
+  },
+  "license": "ISC",
+  "bin": {
+    "replacePackage": "./cli.js"
+  }
+}
